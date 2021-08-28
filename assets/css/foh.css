@@ -1,0 +1,316 @@
+/* FONTS */
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v27-latin-regular.woff') format('woff'),
+       url('../fonts/roboto-v27-latin-regular.ttf') format('truetype');
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/roboto-v27-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto-v27-latin-500.woff') format('woff'),
+       url('../fonts/roboto-v27-latin-500.ttf') format('truetype');
+}
+
+/* roboto-slab-300 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/roboto-slab-v13-latin-300.woff2') format('woff2'),
+       url('../fonts/roboto-slab-v13-latin-300.woff') format('woff'),
+       url('../fonts/roboto-slab-v13-latin-300.ttf') format('truetype');
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-slab-v13-latin-regular.woff') format('woff'),
+       url('../fonts/roboto-slab-v13-latin-regular.ttf') format('truetype');
+}
+
+
+
+
+
+/* VARS */
+:root {
+  --color-black: #1C1C1C;
+  --color-white: #FFF;
+  --color-red: #BA1526;
+  --color-green: #078930;
+  --color-yellow: #EAC102;
+  --color-blue: #0071BC;
+}
+
+
+
+
+/* PAGE & UTILS */
+body {
+  font-family: Roboto, arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.page {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 30px;
+  max-width: 570px;
+}
+
+@media (min-width: 630px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+.sr {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+
+
+
+
+/* HEADER */
+.page__header {
+  background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 89.88%);
+  text-align: center;
+}
+
+.page__header .wrapper {
+  margin: 0;
+  max-width: 100%;
+}
+
+.page__header-cover {
+  width: 100%;
+  object-fit: contain;
+  height: 200px;
+}
+
+@media (min-width: 414px) {
+  .page__header-cover {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+
+
+/* WORD */
+.word {
+  padding: 30px 0;
+}
+
+.word__title {
+  margin: 0 0 -10px;
+  font-size: 3em
+}
+
+.word__title::after {
+  content: '.';
+  color: var(--color-green);
+}
+
+.word__type {
+  display: inline-block;
+  font-size: .75em;
+  margin: 0;
+  color: var(--color-blue);
+}
+
+.word__type::before, 
+.word__type::after {
+  content: '(';
+  color: var(--color-black);
+} 
+
+.word__type::after {
+  content: ')'
+}
+
+.word__definition {
+  font-family: Roboto Slab, georgia, serif;
+  font-weight: 300;
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+.word__example-sentence {
+  font-family: Roboto Slab, georgia, serif;
+  font-weight: 300;
+}
+
+.word__example-sentence::before {
+  content: '💬';
+  font-weight: 400;
+  margin-right: .5em;
+}
+
+@media (min-width: 768px) {
+  .word {
+    padding: 60px 0;
+  }
+
+  .word__title {
+    font-size: 4em
+  }
+
+  .word__type {
+    font-size: .85em;
+  }
+
+  .word__definition {
+    font-size: 1.75em;
+  }
+
+  .word__example-sentence {
+    font-weight: 300;
+  }
+}
+
+
+
+
+
+/* DOWNLOADS */
+.downloads {
+
+}
+
+.downloads::before {
+  content: '···';
+  color: var(--color-blue);
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+
+.downloads__title {
+  margin: 30px 0 15px;
+}
+.downloads__title::after {
+  content: '.';
+  color: var(--color-blue);
+}
+
+.downloads__list { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.downloads__item + .downloads__item {
+  margin-top: 15px;
+}
+
+.download__link {
+  display: block;
+  border-radius: 4px;
+  padding: 1em 2em 1em 1em;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.05);
+  color: var(--color-black);
+  text-decoration: none;
+  transition: color ease .3s, padding-left ease .5s, border-color ease .3s;
+  overflow: hidden;
+}
+
+.download__link::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(-50px, -50%);
+  background: url(../img/mini.png) center center no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-size: .75em;
+  transition: transform ease .5s;
+}
+
+.download__link:hover {
+  color: var(--color-blue);
+  padding-left: 60px;
+  border-color: rgba(0,0,0,.2);
+}
+
+.download__link:hover::before {
+  transform: translate(0, -50%);
+}
+
+/* FOOTER */
+.page__footer {
+  margin-top: auto;
+  font-family: Roboto slab, georgia, serif;
+  font-weight: 300;
+  font-size: .8em;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
+
+.page__footer-message { }
+
+.page__footer-not-found { }
+
+.page__footer-not-found strong { display: block; }
+
+.page__footer-buy-me-a-coffee,
+.page__footer-github,
+.page__footer-twitter,
+.page__footer-mail {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.page__footer-buy-me-a-coffee {}
+
+.page__footer-twitter { }
+
+.page__footer-mail { }
+
+.page__footer-license {
+  height: 30px;
+  display: block;
+  border-radius: 4px 4px 0 0;
+  background: var(--color-red);
+}
