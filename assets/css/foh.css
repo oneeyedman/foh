@@ -55,6 +55,9 @@
   --color-green: #078930;
   --color-yellow: #EAC102;
   --color-blue: #0071BC;
+
+  --font-title: Roboto, arial, sans-serif;
+  --font-text: Roboto Slab, georgia, serif;
 }
 
 
@@ -62,7 +65,7 @@
 
 /* PAGE & UTILS */
 body {
-  font-family: Roboto, arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 18px;
   margin: 0;
   color: var(--color-black);
@@ -135,6 +138,7 @@ body {
 }
 
 .word__title {
+  font-family: var(--font-title);
   margin: 0 0 -10px;
   font-size: 3em
 }
@@ -149,6 +153,7 @@ body {
   font-size: .75em;
   margin: 0;
   color: var(--color-blue);
+  font-family: var(--font-title);
 }
 
 .word__type::before, 
@@ -162,14 +167,12 @@ body {
 }
 
 .word__definition {
-  font-family: Roboto Slab, georgia, serif;
   font-weight: 300;
   margin-top: 30px;
   font-size: 1.5em;
 }
 
 .word__example-sentence {
-  font-family: Roboto Slab, georgia, serif;
   font-weight: 300;
 }
 
@@ -207,7 +210,7 @@ body {
 
 /* DOWNLOADS */
 .downloads {
-
+  font-family: var(--font-title);
 }
 
 .downloads::before {
@@ -280,7 +283,6 @@ body {
 /* FOOTER */
 .page__footer {
   margin-top: auto;
-  font-family: Roboto slab, georgia, serif;
   font-weight: 300;
   font-size: .8em;
   padding-top: 60px;
@@ -309,8 +311,29 @@ body {
 .page__footer-mail { }
 
 .page__footer-license {
-  height: 30px;
+  margin: 1em 0 0;
+  padding: 1em 2em;
   display: block;
   border-radius: 4px 4px 0 0;
-  background: var(--color-red);
+  background: var(--color-black);
+  color: rgba(255,255,255,.8);
+  line-height: 16px;
+}
+
+.page__footer-license strong {
+  color: var(--color-white);
+}
+
+.page__footer-license-link {
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  padding-top: 16px;
+  overflow: hidden;
+  background: url('../img/ico-license.svg') left top no-repeat;
+  background-size: 45px 32px;
+  vertical-align: middle;
+}
+.page__footer-license-link:hover {
+  background-position: left -16px;
 }
