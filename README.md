@@ -10,10 +10,10 @@ Interjección de apatía y sentimiento negativo típicamente granaína.
 
 ## Descargas
 
-- [2560x1440 px](assets/wallpapers/foh-wallpaper-2560x1440.png)
-- [1280x800 px](assets/wallpapers/foh-wallpaper-1280x800.png)
-- [iPad](assets/wallpapers/foh-wallpaper-ipad.png)
-- [iPhone X](assets/wallpapers/foh-wallpaper-iphoneX.png)
+- [2560x1440 px](assets/wallpapers/dark/foh-wallpaper-2560x1440.png)
+- [1280x800 px](assets/wallpapers/dark/foh-wallpaper-1280x800.png)
+- [iPad](assets/wallpapers/dark/foh-wallpaper-ipad.png)
+- [iPhone X](assets/wallpapers/dark/foh-wallpaper-iphoneX.png)
 
 Si te ha gustado el wallpaper puedes [invitarme a un café](https://ko-fi.com/E1E435KTC). Además, tienes el código en este [repo de Github](https://github.com/oneeyedman/foh).
 
