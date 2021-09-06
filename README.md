@@ -4,7 +4,7 @@ Interj.
 
 Interjección de apatía y sentimiento negativo típicamente granaína.
 
-💬 ¿Otra vez sopa de lechuga? ¡Foh!.
+💬 ¿Otra vez sopa de lechuga? ¡Foh!
 
 ---
 
