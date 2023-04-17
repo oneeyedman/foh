@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foh. - Wallpapers</title>
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/foh.css">
 </head>
 <body class="foh">
@@ -20,9 +20,18 @@
       <section class="word">
         <div class="wrapper">
           <h1 class="word__title">Foh</h1>
-          <abbr class="word__type" title="Interjección">Interj.</abbr>
+          <p class="word__note"><abbr class="word__type" title="Interjección">Interj.</abbr></p>
           <p class="word__definition">Interjección de apatía y sentimiento negativo típicamente granaína.</p>
           <p class="word__example-sentence">¿Otra vez sopa de lechuga? ¡Foh!.</p>
+        </div>
+      </section>
+      <section class="theme-switcher">
+        <div class="wrapper">
+          <h2 class="theme-switcher__title sr">Cambiar tema</h2>
+          <div class="theme-switcher__switch">
+            <input type="checkbox" id="theme-switcher__checkbox" class="theme-switcher__checkbox js-theme-switcher-checkbox">
+            <label for="theme-switcher__checkbox" class="theme-switcher__label"><span class="sr">Cambiar a fondo </span><span class="theme-swticher__name js-theme-switcher-name">claro</span></label>
+          </div>
         </div>
       </section>
       <section class="downloads">
@@ -30,16 +39,16 @@
           <h2 class="downloads__title">Descargas</h2>
           <ul class="downloads__list">
             <li class="downloads__item">
-              <a href="assets/wallpapers/dark/foh-wallpaper-2560x1440-dark.png" class="download__link" download="foh-wallpaper-2560x1440-dark.png">2560x1440 px</a>
+              <a href="assets/wallpapers/dark/foh-wallpaper-2560x1440-dark.png" class="download__link js-theme-switcher-link" download="foh-wallpaper-2560x1440-dark.png">2560x1440 px <span class="download__tag download__tag--px-ratio">2x</span></a>
             </li>
             <li class="downloads__item">
-              <a href="assets/wallpapers/dark/foh-wallpaper-1280x800-dark.png" class="download__link" download="foh-wallpaper-1280x800-dark.png">1280x800 px</a>
+              <a href="assets/wallpapers/dark/foh-wallpaper-1280x800-dark.png" class="download__link js-theme-switcher-link" download="foh-wallpaper-1280x800-dark.png">1280x800 px <span class="download__tag download__tag--px-ratio">2x</span></a>
             </li>
             <li class="downloads__item">
-              <a href="assets/wallpapers/dark/foh-wallpaper-ipad-dark.png" class="download__link" download="foh-wallpaper-ipad-dark.png">iPad</a>
+              <a href="assets/wallpapers/dark/foh-wallpaper-ipad-dark.png" class="download__link js-theme-switcher-link" download="foh-wallpaper-ipad-dark.png">iPad <span class="download__tag download__tag--px-ratio">2x</span></a>
             </li>
             <li class="downloads__item">
-              <a href="assets/wallpapers/dark/foh-wallpaper-iphoneX-dark.png" class="download__link" download="foh-wallpaper-iphoneX-dark.png">iPhone X</a>
+              <a href="assets/wallpapers/dark/foh-wallpaper-iphoneX-dark.png" class="download__link js-theme-switcher-link" download="foh-wallpaper-iphoneX-dark.png">iPhone X <span class="download__tag download__tag--px-ratio">2x</span></a>
             </li>
           </ul>
         </div>
@@ -48,12 +57,13 @@
     <footer class="page__footer">
       <div class="wrapper">
         <p class="page__footer-message">Si te ha gustado el wallpaper puedes <a href="https://ko-fi.com/E1E435KTC" class="page__footer-buy-me-a-coffee">invitarme a un café</a>. Además, tienes el código en su <a href="https://github.com/oneeyedman/foh" class="page__footer-github">repo de Github.</a></p>
-        <p class="page__footer-not-found"><strong>¿Cómo que no queda bien en tu dispositivo?</strong> Escríbeme por <a href="https://twitter.com/oneeyedman" class="page__footer-twitter">twitter</a> o al <a href="mailto:carlos@spacenomads.com?subject=[Foh.] Podrías hacerme un fondo para mi dispositivo?" class="page__footer-mail">mail</a> y lo vemos.</p>
+        <p class="page__footer-not-found"><strong>¿Cómo que no queda bien en tu dispositivo?</strong> Escríbeme por <a href="https://mastodon.social/@oneeyedman" class="page__footer-twitter">Mastodon</a> o al <a href="mailto%3Acarlos@spacenomads.com?subject=%5BFoh.%5D%20Podr%C3%ADas%20hacerme%20un%20fondo%20para%20mi%20dispositivo%3F" class="page__footer-mail">mail</a> y lo vemos.</p>
         <p class="page__footer-license">
-          <a href="LICENSE.txt" class="page__footer-license-link">CC-BY-SA</a> 2021 - Hecho con toda la <strong>malafollá</strong> del mundo para ti ;)
+          <a href="LICENSE.txt" class="page__footer-license-link">CC-BY-SA</a> ~2023 - Hecho con toda la <strong>malafollá</strong> del mundo para ti ;)
         </p>
       </div>
     </footer>
   </div>
+  <script src="assets/js/theme-switcher.js"></script>
 </body>
 </html>

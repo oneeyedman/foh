@@ -22,4 +22,4 @@ Escríbeme por [twitter](https://twitter.com/oneeyedman) o al [mail](mailto:carl
 
 ---
 
-CC-BY-SA 2021 - Hecho con toda la **malafollá** del mundo para ti ;)
+CC-BY-SA ~2023 - Hecho con toda la **malafollá** del mundo para ti ;)
