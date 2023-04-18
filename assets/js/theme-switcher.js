@@ -14,11 +14,13 @@ const themeSwitcher = (()=> {
       body.classList.add('foh--light');
     } else {
       body.classList.remove('foh--light');
-      body.classList.add('foh--dark');
-      setTimeout(() => {
-        body.classList.remove('foh--dark');
-      } , 2000);
-
+      
+      if (matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        body.classList.add('foh--dark');
+        setTimeout(() => {
+          body.classList.remove('foh--dark');
+        } , 2000);
+      }
     }
   }
 

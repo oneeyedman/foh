@@ -1,46 +1,46 @@
 /* FONTS */
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-v27-latin-regular.woff') format('woff'),
-       url('../fonts/roboto-v27-latin-regular.ttf') format('truetype');
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+	url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-v27-latin-regular.woff') format('woff'),
+	url('../fonts/roboto-v27-latin-regular.ttf') format('truetype');
 }
 
 /* roboto-500 - latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-500.woff2') format('woff2'),
-       url('../fonts/roboto-v27-latin-500.woff') format('woff'),
-       url('../fonts/roboto-v27-latin-500.ttf') format('truetype');
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''),
+	url('../fonts/roboto-v27-latin-500.woff2') format('woff2'),
+	url('../fonts/roboto-v27-latin-500.woff') format('woff'),
+	url('../fonts/roboto-v27-latin-500.ttf') format('truetype');
 }
 
 /* roboto-slab-300 - latin */
 @font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local(''),
-       url('../fonts/roboto-slab-v13-latin-300.woff2') format('woff2'),
-       url('../fonts/roboto-slab-v13-latin-300.woff') format('woff'),
-       url('../fonts/roboto-slab-v13-latin-300.ttf') format('truetype');
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+	url('../fonts/roboto-slab-v13-latin-300.woff2') format('woff2'),
+	url('../fonts/roboto-slab-v13-latin-300.woff') format('woff'),
+	url('../fonts/roboto-slab-v13-latin-300.ttf') format('truetype');
 }
 
 /* roboto-slab-regular - latin */
 @font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-slab-v13-latin-regular.woff') format('woff'),
-       url('../fonts/roboto-slab-v13-latin-regular.ttf') format('truetype');
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+	url('../fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-slab-v13-latin-regular.woff') format('woff'),
+	url('../fonts/roboto-slab-v13-latin-regular.ttf') format('truetype');
 }
 
 
@@ -49,30 +49,30 @@
 
 /* VARS */
 :root {
-  --color-black: #1C1C1C;
-  --color-white: #FFF;
-  --color-red: #BA1526;
-  --color-green: #078930;
-  --color-yellow: #EAC102;
-  --color-blue: #0071BC;
+	--font-size: 16;
 
-  --theme-dot: var(--color-red);
-  --theme-bg: var(--color-black);
-  --theme-text: var(--color-white);
-  --theme-link: var(--color-yellow);
-  --theme-border: rgba(255,255,255,.05);
-  --theme-border-hover: rgba(255,255,255,.2);
-  --theme-tag: rgba(255,255,255,.05);
-  --theme-license: rgba(0,0,0,.8);
-  --theme-download-bg: var(--color-white);
-  --theme-download-text: var(--color-black);
-  --theme-download-link: var(--color-blue);
-  --theme-download-tag: rgba(0,0,0,.05);
-
-  --font-title: Roboto, arial, sans-serif;
-  --font-text: Roboto Slab, georgia, serif;
-  --font-size: 16;
+	--color-black: #1c1c1c;
+	--color-white: #ffffff;
+	--color-red: #ba1526;
+	--color-green: #078930;
+	--color-yellow: #eac102;
+	--color-blue: #0071bc;
+	--theme-dot: var(--color-red);
+	--theme-bg: var(--color-black);
+	--theme-text: var(--color-white);
+	--theme-link: var(--color-yellow);
+	--theme-border: rgba(255,255,255,.05);
+	--theme-border-hover: rgba(255,255,255,.2);
+	--theme-tag: rgba(255,255,255,.05);
+	--theme-license: rgba(0,0,0,.8);
+	--theme-download-bg: var(--color-white);
+	--theme-download-text: var(--color-black);
+	--theme-download-link: var(--color-blue);
+	--theme-download-tag: rgba(0,0,0,.05);
+	--font-title: Roboto, arial, sans-serif;
+	--font-text: Roboto Slab, georgia, serif;
 }
+
 
 
 
@@ -88,7 +88,6 @@ body {
 	font-family: var(--font-text);
 	font-size: calc(18/var(--font-size) * 1rem);
 	margin: 0;
-	transition: background-color .3s ease;
 }
 
 .page {
@@ -118,7 +117,6 @@ body {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-
 }
 
 
@@ -138,15 +136,12 @@ body {
 }
 
 .page__header .wrapper::before {
-	animation-duration: 1.5s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
 	background: url(../img/hero-light.png) center no-repeat;
 	background-size: contain;
-	clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 	content: '';
 	height: 100%;
 	left: 0;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -156,8 +151,8 @@ body {
 .page__header-cover {
 	display: block;
 	height: calc(200/var(--font-size) * 1rem);
+	object-fit: contain;
 	width: 100%;
-  object-fit: contain;
 }
 
 @media (min-width: 414px) {
@@ -167,10 +162,14 @@ body {
 		object-fit: contain;
 		object-position: center;
 		width: 100%;
-
 	}
 }
 
+
+
+
+
+/* MAIN */
 .page__main {
 	position: relative;
 }
@@ -183,8 +182,8 @@ body {
 
 .word__title {
 	font-family: var(--font-title);
-	font-size: 3em;;
-	margin: 0 0 calc(-10/var(--font-size) * 1rem);
+	font-size: 3em;
+	margin: 0 0 calc(-10/var(--font-size) * 1rem);;
 }
 
 .word__title::after {
@@ -296,7 +295,6 @@ body {
 	padding: 1em 2em 1em 1em;
 	position: relative;
 	text-decoration: none;
-	transition: color ease .3s, padding-left ease .5s, border-color ease .3s, background-color ease .3s;
 }
 
 .download__link::before {
@@ -314,7 +312,6 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translate(calc(-50/var(--font-size) * 1rem), -50%);
-	transition: transform ease .5s;
 	width: calc(40/var(--font-size) * 1rem);
 }
 
@@ -338,9 +335,13 @@ body {
 }
 
 .download__link:hover .download__tag {
-	background-color: var(--theme-download-tag);;
-	color: var(--theme-download-text);
+	background-color: var(--theme-download-tag);
+	color: var(--theme-download-text);;
 }
+
+
+
+
 
 /* FOOTER */
 .page__footer {
@@ -350,11 +351,6 @@ body {
 	margin-top: auto;
 	padding-top: calc(60/var(--font-size) * 1rem);
 }
-
-
-
-
-
 
 .page__footer-not-found strong {
 	display: block;
@@ -367,12 +363,6 @@ body {
 	color: var(--theme-link);
 	text-decoration: none;
 }
-
-
-
-
-
-
 
 .page__footer-license {
 	background: var(--theme-text);
@@ -403,6 +393,11 @@ body {
 	background-position: left calc(-16/var(--font-size) * 1rem);
 }
 
+
+
+
+
+/* THEME */
 .foh--light {
 	--theme-dot: var(--color-green);
 	--theme-bg: var(--color-white);
@@ -426,19 +421,20 @@ body {
 	background-image: url('../img/mini-light.png');
 }
 
-
 .foh--light .page__header .wrapper::before {
-	animation-name: let-there-be-light;
-	clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	opacity: 1;
 }
 
 .foh--dark .page__header .wrapper::before {
-	animation-name: enter-night;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	opacity: 0;
 }
 
 
 
+
+
+
+/* KEYFRAMES */
 @keyframes let-there-be-light {
 	0% {
 		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -468,6 +464,10 @@ body {
 }
 
 
+
+
+
+/* THEME SWITCHER */
 .theme-switcher {
 	left: 100%;
 	position: absolute;
@@ -512,7 +512,6 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	transition: background-color .3s ease;
 	width: calc(50/var(--font-size) * 1rem);
 }
 
@@ -527,7 +526,6 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	transition: left .3s ease;
 	width: calc(24/var(--font-size) * 1rem);
 }
 
@@ -542,6 +540,51 @@ body {
 	width: calc(24/var(--font-size) * 1rem);
 }
 
-.theme-switcher__checkbox:focus + .theme-switcher__label::before {
+.theme-switcher__checkbox:focus-visible + .theme-switcher__label::before {
 	box-shadow: 0 0 0 2px var(--color-blue), 0 0 0 3px var(--color-white);
+}
+
+
+
+
+
+/* REDUCE MOTION */
+@media (prefers-reduced-motion: no-preference) {
+	body {
+		transition: background-color .3s ease;
+	}
+	.page__header .wrapper::before {
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: 1;
+		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		opacity: 1;
+	}
+
+	.download__link {
+		transition: color ease .3s, padding-left ease .5s, border-color ease .3s, background-color ease .3s;
+	}
+	
+	.download__link::before {
+		transition: transform ease .5s;
+	}
+
+	.foh--light .page__header .wrapper::before {
+		animation-name: let-there-be-light;
+		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	}
+	
+	.foh--dark .page__header .wrapper::before {
+		animation-name: enter-night;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+  .theme-switcher__label::before {
+		transition: background-color .3s ease;
+	}
+
+	.theme-switcher__label::after {
+		transition: left .3s ease;
+	}
+
 }
