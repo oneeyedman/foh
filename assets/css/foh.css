@@ -577,6 +577,7 @@ body {
 	.foh--dark .page__header .wrapper::before {
 		animation-name: enter-night;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		opacity: 1;
 	}
 
   .theme-switcher__label::before {
